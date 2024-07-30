@@ -376,6 +376,9 @@ document.addEventListener("DOMContentLoaded", function () {
     type(); // Start the typing effect
 });
 
+
+
+
 // about page (education section) animation
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('.fade-in');

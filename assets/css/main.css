@@ -250,19 +250,21 @@ input, select, textarea {
 	}
 
 	
-	#banner .content .typewriter {
-		
-		white-space: nowrap; /* Prevent wrapping */
-		overflow: hidden; /* Hide the overflow text */
-		border-right: 0.15em solid orange; /* The caret */
-		animation: blink-caret 0.75s step-end infinite;
-	}
-	
-	/* Blinking caret effect */
-	@keyframes blink-caret {
-		from, to { border-color: transparent; }
-		50% { border-color: orange; }
-	}
+/* Style for the typewriter effect */
+#banner .content .typewriter {
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide the overflow text */
+    border-right: 0.15em solid orange; /* The caret */
+    animation: blink-caret 0.75s step-end infinite; /* Blinking caret animation */
+    display: inline; /* Ensure inline display for text */
+}
+
+/* Blinking caret effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
 	
 	 /* about animation css */
 
@@ -2003,7 +2005,6 @@ h1 span {
 
 		header.major > p {
 			font-size: 0.9em;
-			font-weight: 600;
 			letter-spacing: .10em;
 		
 			margin-bottom: 0;
